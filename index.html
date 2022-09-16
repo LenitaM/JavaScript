@@ -1,0 +1,91 @@
+<!DOCTYPE html> <!--aula 1: 15 set 2022-->
+<html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Aula de 15 set 2022</title>
+    </head><h1> Introdução a HTML e JS</h1>
+</head>
+    <body>
+<h2> Variaveis, tipos primitivos e operadores matemáticos em JS </h2>
+<p>tipos primitivos <br> string = qualquer texto <br> number = qualquer tipos de numeros . sem "aspas" o pc vai entender que são números</p> 
+<script>
+//copiado do index.js
+console.log("Hello Wold")
+console.log(5)
+console.log(34.6)
+console.log(true)
+console.log(false)
+
+let mensagem = "Minha mensagem" //let pode ser lida e alterada dentro do bloco de código onde ela foi declarada
+console.log(mensagem) // Minha Mensagem
+
+mensagem = "Novo Texto" 
+
+console.log(mensagem) // Novo Texto
+
+const pi = 3.14 // const (valor constante) o valor dela NUNCA pode ser mudado
+
+console.log(pi) // 3.14
+//pi = 5
+//console.log(pi) 
+//se mudar o valor da variavel const vai dá: Uncaught TypeError: Assignment to constant variable.
+var idade = 18 // var deixa repetir a variavel duas vezes, subescreve
+
+console.log(idade)
+
+var idade = 30 //não pode pq uma idade já foi declarada //não é recomendado usar o var
+console.log(idade)
+
+const a = 6
+const b = a
+
+console.log(a)
+console.log(b)
+
+//OPERADORES MATEMÁTICOS DO JAVASCRIPT
+
+//SOMA
+const soma = 5 + 32
+console.log(soma) //37
+
+const soma2 = 65 + soma
+console.log(soma2) //102
+
+//console.log("45" - 2) //se for "45" + 2 = 452 aberração do JS "45" - 2 = 43 
+//concatenação = junção, tranformar em uma coisa só 452
+
+//MULTIPLICAÇÃO
+const multi = soma2 * 4
+console.log(multi) //408
+
+//DIVISÃO(/)
+let divisao = multi / 2
+console.log(divisao) // 204
+
+let dim = divisao - 100
+console.log(dim) // 104
+
+//Resto da divisão (%) - para saber o resto da divisão
+console.log(4 % 2) // 0
+console.log(15 % 7) // 1
+
+//EXPONENCIAÇÃO (**)
+//maneira antiga
+console.log(Math.pow(2,3)) 
+console.log(Math.pow(3,3))
+//outro método
+let pot = Math.pow(3,3) //27 
+console.log(pot)
+//maneira atual
+console.log(3**4) //81
+
+//LÓGICA ALGEBRICA 
+console.log(5 + 3 * 2 / 2 - 4) // 4 
+console.log(5 + 3 * 2 / (2 - 4)) // -8
+console.log(10 / 5 * 4 / 2) //4
+//priorização divisão ou multi depois soma ou subtração, casos de parenteses
+//o código segue da direita para esquerda em caso de não priorizar
+ </script>
+    </body>
+    </html>
