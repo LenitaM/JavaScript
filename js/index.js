@@ -77,6 +77,16 @@ console.log(dim) // 104
 console.log(4 % 2) // 0
 console.log(15 % 7) // 1
 
+//EXPONENCIAÇÃO (**)
+//maneira antiga
+console.log(Math.pow(2,3)) 
+console.log(Math.pow(3,3))
+//outro método
+let pot = Math.pow(3,3) //27 
+console.log(pot)
+//maneira atual
+console.log(3**4) //81
+
 //LÓGICA ALGEBRICA
 console.log(5 + 3 * 2 / 2 - 4) // 4 
 console.log(5 + 3 * 2 / (2 - 4)) // -8
