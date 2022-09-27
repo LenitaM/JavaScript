@@ -1,0 +1,35 @@
+<!--AULA 06 22 DE SET DE 2022: TRAÇOS DE REPETIÇÃO WHILE E FOR -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <select class="box1"> <script>
+/*
+*While funciona quando vc sabe o numero definido
+*Receber um número inteiro do usuário e gerar a tabuada desse número na tela do usuário
+*/
+//Receber um número
+const num = parseInt(prompt('Informe um número inteiro'))
+
+//FOR
+/**
+ *  1º Precisa de um variavel contadora, informação de quando o loop deve para ou continuar (nome usado geralmente i)
+ *  2º Condição de corrida
+ *  3º Modificação da variável contadora: Utilizando os operadores de Incremento (--) ou Decremento (++)
+*/
+//ordem deve ser sempre assim. Depois bota uma operação para ele multiplicar com i, repetir quando for <=10 e incrementar 
+for (let i = 1; i <= 10; i++) {
+    let resultado = num * i
+    //documento.write coloca os códigos de js na pagina html o x está como string pra entender que é um multiplicaçao, nos parenteses tem que usar os códigos de html pq é onde vai aparecer na tela
+    document.write(`<p>${num} x ${i} = ${resultado}</p>`)
+}
+
+    </script>
+    </select>
+</body>
+</html>
